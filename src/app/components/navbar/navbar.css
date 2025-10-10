@@ -1,0 +1,18 @@
+.logo {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.btn {
+    border: none;
+    padding: 2px 100px;
+
+}
+
+
+.btn-registro {
+background-color: var(----gradient-secondary);
+}
+
+.btn-sesion {
+    background-color: var(gradient-hero);
+}
