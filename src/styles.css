@@ -1,33 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 /* importar tipografias */
 /*variables de css paleta de colores*/
- @import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/poppins');
 
- /* Variables cde css*/
+/* Variables cde css*/
 
 
 
- :root{
-    --primary-color:  #e245a6;
+:root {
+    --primary-color: #e245a6;
     --secundary-color: #9c5d80;
-    --light-background:  #DAE2B6;
-    --white: #e8edf0; 
+    --light-background: #DAE2B6;
+    --white: #e8edf0;
     --text-dark: #111010;
-    --text-light:#6c757d;
+    --text-light: #6c757d;
     --gradient-primary: linear-gradient(to right, #ff69b4, #ff7f50, #ffa500);
     --gradient-secundary: linear-gradient(to right, #fff176, #ffb6c1);
 
 
 
- }
-body{
+}
+
+body {
     background-color: (var(--light-background));
-    font-family: "poppins",sans-serif;
+    font-family: "poppins", sans-serif;
     color: var(--text-dark);
     overflow-x: hidden;
-}   
+}
+
 * {
     margin: 0;
     padding: 0;
-    border-radius: border-box;
+    box-sizing: border-box;
 }

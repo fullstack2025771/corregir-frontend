@@ -61,4 +61,7 @@ logout(){
   alert('Cierre de sesion, Vuelve pronto'),
   this._router.navigate(['/login'])
 }
+isLoggedIn() {
+  return this. getToken() ? true : false;
+}
 }

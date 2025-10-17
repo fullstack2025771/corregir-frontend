@@ -6,11 +6,12 @@ import { Login } from './pages/login/login';
 import { NotFound } from './pages/not-found/not-found';
 import { Products } from './pages/products/products';
 import { Register } from './pages/register/register';
-
+import { authGuard } from './guards/auth-guard';
+// importarv el guardian y Especificar que rutas son protegidas
 
 export const routes: Routes = [
     {path:'', component: Home, title: 'Inicio'},
-    {path:'admin', component: Admin, title: 'Dashboard'},
+    {path:'admin', component: Admin, title: 'Dashboard' , canActivate: [authGuard]},
     {path:'login', component: Login, title: 'Inicio Sesion'},
    
     {path:'products', component: Products, title: 'Productos'},

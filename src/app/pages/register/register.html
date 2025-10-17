@@ -1,1 +1,67 @@
-<p>register works!</p>
+ 
+
+<main>
+
+    <form class="formulario" [formGroup]="registerForm">
+        <h1>Registro</h1>
+
+        <!-- nombre completo-->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input 
+                type="text" 
+                class="form-control"
+                id="nombre"
+                formControlName="name"
+            >
+        </div>
+
+        <!-- username-->
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input 
+                type="text" 
+                class="form-control"
+                id="username"
+                formControlName="username"
+            >
+        </div>
+
+        <!-- correo electronico -->
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input 
+                type="email" 
+                class="form-control"
+                id="correo"
+                formControlName="email"
+            >
+        </div>
+
+        <!-- edad-->
+        <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input 
+                type="number" 
+                class="form-control"
+                id="edad"
+                formControlName="age"
+            >
+        </div>
+
+        <!-- contraseña -->
+        <div class="mb-3">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input 
+                type="password" 
+                class="form-control"
+                id="contrasena"
+                formControlName="password"
+            >
+        </div>
+
+        <!-- btn para iniciar sesión -->
+        <button type="submit" class="btn">Registrarse</button>
+    </form>
+
+</main>

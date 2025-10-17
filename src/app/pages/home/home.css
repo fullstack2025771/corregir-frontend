@@ -1,7 +1,7 @@
 .baner {
     width: 100vw;
     height: 80vh;
-    background-color: var(--gradient-primary);
+    background: var(--gradient-primary);
 }
 
 .productos {
