@@ -11,5 +11,5 @@ import { inject } from '@angular/core';
 })
 export class Navbar {
   private _loginService = inject(LoginService);
-  inVisible: boolean = this._loginService.isAdmin();
+  isVisible: boolean = this._loginService.isAdmin();
 }

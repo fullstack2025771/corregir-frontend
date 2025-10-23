@@ -18,20 +18,20 @@ export class UserService {
 // metodo POST
 
 postUser(userToCreate : User) {
-   return this._httpClient.post('${this.apiUrl}/users' , userToCreate);
+   return this._httpClient.post(`${this.apiUrl}/users` , userToCreate);
 }
 
 getUser(){
-  return this._httpClient.get('${this.apiUrl}/users');
+  return this._httpClient.get(`${this.apiUrl}/users`);
 }
 // Metodo put
 putUser(userToUpdate: User , id:string){
-  return this._httpClient.put('${this.apiUrl}/users/${id}',userToUpdate);
+  return this._httpClient.put(`${this.apiUrl}/users/${id}`,userToUpdate);
 }
 // Metodo delete
 
 deleteUser(id:string){
-  return this._httpClient.delete('${this.apiUrl}/users/${id}')
+  return this._httpClient.delete(`${this.apiUrl}/users/${id}`)
 }
 
 

@@ -1,0 +1,14 @@
+.contenedor-nav{
+    width: 250px;
+    background: #e245c6;
+    color: white;
+
+}
+.nav-link.active {
+    background-color: white;
+    color: #e245c6; 
+    border-radius: 20px;
+}
+.cierre {
+    cursor: pointer;
+}

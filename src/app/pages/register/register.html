@@ -1,65 +1,40 @@
- 
-
 <main>
 
-    <form class="formulario" [formGroup]="registerForm">
+    <form class="formulario" [formGroup]="registerForm"(ngSubmit)="handleSubmit()">
         <h1>Registro</h1>
 
         <!-- nombre completo-->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre Completo</label>
-            <input 
-                type="text" 
-                class="form-control"
-                id="nombre"
-                formControlName="name"
-            >
+            <input type="text" class="form-control" id="nombre" formControlName="name" autocomplete="name" required>
         </div>
 
         <!-- username-->
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input 
-                type="text" 
-                class="form-control"
-                id="username"
-                formControlName="username"
-            >
+            <input type="text" class="form-control" id="username" formControlName="username" required>
         </div>
 
         <!-- correo electronico -->
         <div class="mb-3">
             <label for="correo" class="form-label">Correo Electrónico</label>
-            <input 
-                type="email" 
-                class="form-control"
-                id="correo"
-                formControlName="email"
-            >
+            <input type="email" class="form-control" id="correo" formControlName="email" required>
         </div>
 
         <!-- edad-->
         <div class="mb-3">
             <label for="edad" class="form-label">Edad</label>
-            <input 
-                type="number" 
-                class="form-control"
-                id="edad"
-                formControlName="age"
-            >
+            <input type="number" class="form-control" id="edad" formControlName="age" required>
         </div>
 
         <!-- contraseña -->
         <div class="mb-3">
             <label for="contrasena" class="form-label">Contraseña</label>
-            <input 
-                type="password" 
-                class="form-control"
-                id="contrasena"
-                formControlName="password"
-            >
+            <input type="password" class="form-control" id="contrasena" formControlName="password"
+                autocomplete="new-password" required>
         </div>
-
+ <!--formularios basados en plantillas    Validacion en plantillas-->
+              <!-- requerid minlength="8"   -->
         <!-- btn para iniciar sesión -->
         <button type="submit" class="btn">Registrarse</button>
     </form>

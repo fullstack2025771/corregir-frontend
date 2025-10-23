@@ -1,5 +1,6 @@
 <main>
 
+    
     <form class="formulario" [formGroup]="loginForm" (ngSubmit)="handleSummit()">
         <h1>Inicio de Sesión</h1>
         <!-- correo electronico -->
@@ -10,6 +11,7 @@
                 class="form-control"
                 formControlName="emailLogin"
                 placeholder="correo"
+                [class.is-invalid]="loginForm.get('emailLogin')?.invalid"
             >
         </div>
         <!-- contraseña -->
@@ -19,7 +21,10 @@
                 type="password" 
                 class="form-control" 
                 formControlName="passwordLogin"
-                placeholder="contraseña"
+                autocomplete="current-password"
+                placeholder="contrasena"
+                [class.is-invalid]="loginForm.get('passwordLogin')?.touched && loginForm.get('passwordLogin')"
+
             >
         </div>
         <!-- btn para iniciar sesión -->

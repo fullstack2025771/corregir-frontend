@@ -1,9 +1,13 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+@if(!isInvisible){
 <header>
     <app-navbar></app-navbar>
 </header>
-
+}
 <router-outlet />
+
+@if(!isInvisible){
 <footer>
      <app-footer></app-footer> 
 </footer>
+}
